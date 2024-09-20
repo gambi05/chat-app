@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonAppBar from './ButtonAppbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Login from '../pages/login'
+import Login from '../pages/Login'
 import Register from '../pages/Register'
 import Chats from '../pages/Chats'
 import UserProvider from '../contexts/UserContext'
