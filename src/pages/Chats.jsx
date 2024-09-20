@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material'
 import ListOfUsers from '../components/chat/ListOfUsers'
 import { pink } from '@mui/material/colors'
 import Welcome from '../components/chat/Welcome'
-import ChatArea from '../components/chat/chatArea'
+import ChatArea from '../components/chat/ChatArea'
 import api from '../configs/api'
 
 const Chats = () => {
