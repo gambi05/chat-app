@@ -5,13 +5,15 @@ import { io } from 'socket.io-client';
 import api from '../../configs/api';
 import { userUser } from '../../contexts/UserContext';
 import autoScroll from '../../utility/autoScroll';
+import getEnv from '../../utility/getEnv'
+
 
 
 const ChatApp = ({ selectedUser }) => {
     
     const { user } = userUser()
 
-    const socket = io('http://localhost:5000')
+    const socket = io(getEnv('VITE_SERVER_URL'))
     const [message, setMessage] = useState('')
     const [messages, setMessages] = useState([])
 
