@@ -18,7 +18,7 @@ const About = ()=> (<div>About</div>)
 
 const App = () => {
   
-  console.log(getEnv(VITE_SERVER_URL))
+  console.log(getEnv('VITE_SERVER_URL'))
   return (
     <div>
         
